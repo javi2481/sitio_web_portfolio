@@ -1,0 +1,200 @@
+/* Dark Mode Styles */
+[data-theme="dark"] {
+    /* Dark Mode Color Variables */
+    --primary-color: #4dabf7;
+    --secondary-color: #adb5bd;
+    --background-color: #1a1a1a;
+    --text-color: #ffffff;
+    --light-gray: #2d2d2d;
+    --border-color: #404040;
+}
+
+/* Dark Mode Specific Overrides */
+[data-theme="dark"] .navbar {
+    background-color: var(--background-color);
+    border-bottom: 1px solid var(--border-color);
+}
+
+[data-theme="dark"] .hero {
+    background-color: var(--light-gray);
+}
+
+[data-theme="dark"] .portfolio {
+    background-color: var(--light-gray);
+}
+
+[data-theme="dark"] .github {
+    background-color: var(--light-gray);
+}
+
+[data-theme="dark"] .blog {
+    background-color: var(--light-gray);
+}
+
+[data-theme="dark"] .portfolio-item {
+    background-color: var(--background-color);
+    border: 1px solid var(--border-color);
+}
+
+[data-theme="dark"] .github-card {
+    background-color: var(--background-color);
+    border: 1px solid var(--border-color);
+}
+
+[data-theme="dark"] .blog-placeholder {
+    background-color: var(--background-color);
+    border: 1px solid var(--border-color);
+}
+
+[data-theme="dark"] .skill-icon {
+    background-color: var(--light-gray);
+    border: 1px solid var(--border-color);
+}
+
+[data-theme="dark"] .contact-item i {
+    background-color: var(--light-gray);
+    border: 1px solid var(--border-color);
+}
+
+[data-theme="dark"] .social-link {
+    background-color: var(--light-gray);
+    border: 1px solid var(--border-color);
+}
+
+[data-theme="dark"] .portfolio-link {
+    background-color: var(--background-color);
+    border: 1px solid var(--border-color);
+}
+
+[data-theme="dark"] .form-group input,
+[data-theme="dark"] .form-group textarea {
+    background-color: var(--light-gray);
+    border-color: var(--border-color);
+    color: var(--text-color);
+}
+
+[data-theme="dark"] .form-group input::placeholder,
+[data-theme="dark"] .form-group textarea::placeholder {
+    color: var(--secondary-color);
+}
+
+[data-theme="dark"] .tech-tag {
+    background-color: var(--light-gray);
+    border: 1px solid var(--border-color);
+}
+
+[data-theme="dark"] .topic-tag {
+    background-color: var(--light-gray);
+    border: 1px solid var(--border-color);
+}
+
+[data-theme="dark"] .stat {
+    background-color: var(--light-gray);
+    border: 1px solid var(--border-color);
+}
+
+[data-theme="dark"] .skill-bar {
+    background-color: var(--border-color);
+}
+
+/* Theme Toggle Button */
+.theme-toggle {
+    background: none;
+    border: none;
+    color: var(--text-color);
+    font-size: 1.2rem;
+    cursor: pointer;
+    padding: 0.5rem;
+    border-radius: var(--border-radius);
+    transition: all var(--transition-speed);
+}
+
+.theme-toggle:hover {
+    background-color: var(--light-gray);
+}
+
+[data-theme="dark"] .theme-toggle i::before {
+    content: "\f185"; /* sun icon */
+}
+
+/* Smooth transitions for theme switching */
+* {
+    transition: background-color var(--transition-speed), 
+                color var(--transition-speed), 
+                border-color var(--transition-speed);
+}
+
+/* Dark mode scrollbar */
+[data-theme="dark"] ::-webkit-scrollbar {
+    width: 8px;
+}
+
+[data-theme="dark"] ::-webkit-scrollbar-track {
+    background: var(--light-gray);
+}
+
+[data-theme="dark"] ::-webkit-scrollbar-thumb {
+    background: var(--border-color);
+    border-radius: 4px;
+}
+
+[data-theme="dark"] ::-webkit-scrollbar-thumb:hover {
+    background: var(--secondary-color);
+}
+
+/* Dark mode selection */
+[data-theme="dark"] ::selection {
+    background-color: var(--primary-color);
+    color: var(--background-color);
+}
+
+/* Dark mode focus states */
+[data-theme="dark"] .form-group input:focus,
+[data-theme="dark"] .form-group textarea:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 2px rgba(77, 171, 247, 0.2);
+}
+
+/* Dark mode button hover states */
+[data-theme="dark"] .btn-primary:hover {
+    background-color: #339af0;
+}
+
+[data-theme="dark"] .btn-secondary:hover {
+    background-color: #868e96;
+}
+
+/* Dark mode navigation active state */
+[data-theme="dark"] .nav-link.active {
+    color: var(--primary-color);
+}
+
+/* Dark mode mobile menu */
+[data-theme="dark"] .nav-menu {
+    background-color: var(--background-color);
+    border: 1px solid var(--border-color);
+}
+
+/* Dark mode hamburger */
+[data-theme="dark"] .hamburger span {
+    background-color: var(--text-color);
+}
+
+/* Dark mode github header */
+[data-theme="dark"] .github-header {
+    background-color: var(--border-color);
+}
+
+/* Dark mode activity items */
+[data-theme="dark"] .activity-item {
+    border-bottom-color: var(--border-color);
+}
+
+/* Dark mode footer links */
+[data-theme="dark"] .footer-links a {
+    color: var(--secondary-color);
+}
+
+[data-theme="dark"] .footer-links a:hover {
+    color: var(--text-color);
+}
